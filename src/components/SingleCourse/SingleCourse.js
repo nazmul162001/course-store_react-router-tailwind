@@ -2,7 +2,7 @@ import React from 'react';
 import './SingleCourse.css';
 
 const SingleCourse = ({ handleAddToCart, course, selectedCourse }) => {
-  const { img, name, description, id, price } = course;
+  const { img, name, description, price } = course;
   return (
     <div className="single-course rounded-xl flex justify-between">
       <img className="w-6/12  p-5" src={img} alt="" />

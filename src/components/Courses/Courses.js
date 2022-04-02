@@ -1,21 +1,24 @@
 import React, { useEffect, useState } from 'react';
+import useCart from '../hooks/useCart';
 import ReviewCart from '../ReviewCart/ReviewCart';
 import SingleCourse from '../SingleCourse/SingleCourse';
 import './Course.css';
 
 const Courses = () => {
   const [cart, setCart] = useState([])
-  const [courses, setCourses] = useState([]);
-  useEffect(() => {
-    fetch('data.json')
-      .then((res) => res.json())
-      .then((data) => setCourses(data));
-  }, []);
+  // custom hooks
+  const [courses, setCourses] = useCart();
 
   //handleAddToCart
   const handleAddToCart = (selectedCourse) => {
-    console.log(selectedCourse);
+    // console.log(selectedCourse.id);
     setCart([...cart, selectedCourse])
+  }
+
+  //handleRemoveCart
+  const handleRemoveCart = (remove) => {
+    // console.log(remove.id);
+    setCart(cart.filter(pd => pd.id !== remove.id));
   }
 
   return (
@@ -35,8 +38,8 @@ const Courses = () => {
       <div className="cart-container text-center">
         <ReviewCart 
         cart = {cart}
-        setCart = {setCart}
         courses = {courses}
+        handleRemoveCart ={handleRemoveCart}
         />
       </div>
     </div>
