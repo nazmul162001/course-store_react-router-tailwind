@@ -12,7 +12,11 @@ const Courses = () => {
   //handleAddToCart
   const handleAddToCart = (selectedCourse) => {
     // console.log(selectedCourse.id);
-    setCart([...cart, selectedCourse])
+    if(cart.find(x => x.id === selectedCourse.id)){
+      alert('Already Added this product')
+    } else{
+      setCart([...cart, selectedCourse])
+    }
   }
 
   //handleRemoveCart
