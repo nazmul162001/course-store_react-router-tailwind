@@ -4,8 +4,8 @@ import SingleCourse from '../SingleCourse/SingleCourse';
 import './Course.css';
 
 const Courses = () => {
-  const [courses, setCourses] = useState([]);
   const [cart, setCart] = useState([])
+  const [courses, setCourses] = useState([]);
   useEffect(() => {
     fetch('data.json')
       .then((res) => res.json())
@@ -13,7 +13,7 @@ const Courses = () => {
   }, []);
 
   //handleAddToCart
-  const handleAddToCart = (selectedCourse, course) => {
+  const handleAddToCart = (selectedCourse) => {
     console.log(selectedCourse);
     setCart([...cart, selectedCourse])
   }
@@ -35,6 +35,8 @@ const Courses = () => {
       <div className="cart-container text-center">
         <ReviewCart 
         cart = {cart}
+        setCart = {setCart}
+        courses = {courses}
         />
       </div>
     </div>

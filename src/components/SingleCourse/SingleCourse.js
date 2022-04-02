@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleCourse.css';
 
-const SingleCourse = ({ handleAddToCart, course }) => {
+const SingleCourse = ({ handleAddToCart, course, selectedCourse }) => {
   const { img, name, description, id, price } = course;
   return (
     <div className="single-course rounded-xl flex justify-between">
@@ -19,7 +19,7 @@ const SingleCourse = ({ handleAddToCart, course }) => {
         <button
           onClick={() => handleAddToCart(course)}
           type="button"
-          class="bg-gradient-to-r from-gray-400 to-blue-400 hover:from-pink-500 hover:to-yellow-500 w-full rounded-md py-2 my-2"
+          className="bg-gradient-to-r from-gray-400 to-blue-400 hover:from-pink-500 hover:to-yellow-500 w-full rounded-md py-2 my-2"
         >
           Add to Cart
         </button>
