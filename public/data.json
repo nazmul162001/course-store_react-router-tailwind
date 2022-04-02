@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Complete Web Developement",
+    "img": "https://www.onlinecoursereport.com/wp-content/uploads/2020/07/shutterstock_394793860-1024x784.jpg",
+    "price": "120",
+    "description": "Designing websites that demand high prices is easier than you think. Learn now. Learn how to design professional websites in the comfort of your own home. 17+ Years Experience. Webflow Course. Money Back Guarantee. Learn Step-by-step."
+  },
+  {
+    "id": 2,
+    "name": "Graphic Design",
+    "img": "https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhcGhpYyUyMGRlc2lnbnxlbnwwfHwwfHw%3D&w=1000&q=80",
+    "price": "90",
+    "description": "Get Results for Graphic Design Companies Usa. Find Quick Results from Multiple Sources. Search for Graphic Design Companies Usa and Discover Millions of Results. Discover us now! Easy Acces To Information. Simple in use. Multiple sources combined. All the Answers. Fast and trusted."
+  },
+  {
+    "id": 3,
+    "name": "React Native Developement",
+    "img": "https://www.simplilearn.com/ice9/free_resources_article_thumb/React_Native_Tutorial.jpg",
+    "price": "110",
+    "description": "Find App Development In Android at Shopwebly, the Website to Compare Prices! Find and Compare App Development In Android Online. Save Now at Shopwebly! Many Products. Search and Discover. Easy Acces. Find Easily. Compare Products. Quick Results. Types: 24/7 Accessible, Big Variaty."
+  },
+  {
+    "id": 4,
+    "name": "Wordpress Developement",
+    "img": "https://www.wpexplorer.com/wp-content/uploads/beginner-dev-skills.png",
+    "price": "99",
+    "description": "GigaPromo is the website to compare Best Managed Wordpress Hosting. Search and save now! Large Selection. Cheap Prices. Simple Search. Compare Simply. Save Online. Full Offer. Compare Online. The Best Price. Always Sale. Services: Compare products online, Free comparison of prices, Find the best provider, See how much you can save."
+  }
+]
