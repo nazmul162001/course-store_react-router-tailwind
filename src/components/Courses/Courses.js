@@ -7,7 +7,7 @@ import './Course.css';
 const Courses = () => {
   const [cart, setCart] = useState([])
   // custom hooks
-  const [courses, setCourses] = useCart();
+  const [courses] = useCart();
 
   //handleAddToCart
   const handleAddToCart = (selectedCourse) => {
@@ -22,6 +22,12 @@ const Courses = () => {
   //handleRemoveCart
   const handleRemoveCart = (remove) => {
     // console.log(remove.id);
+    setCart(cart.filter(pd => pd.id !== remove.id));
+  }
+
+  // handle enrollCourse
+  const handleEnrollCourse = (remove) => {
+    alert('Congratulations!!! You Are Successfully Enrolled');
     setCart(cart.filter(pd => pd.id !== remove.id));
   }
 
@@ -44,6 +50,7 @@ const Courses = () => {
         cart = {cart}
         courses = {courses}
         handleRemoveCart ={handleRemoveCart}
+        handleEnrollCourse = {handleEnrollCourse}
         />
       </div>
     </div>

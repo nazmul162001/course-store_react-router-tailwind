@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReviewCart = ({ cart, handleRemoveCart }) => {
+const ReviewCart = ({ cart, handleRemoveCart, handleEnrollCourse }) => {
   // console.log(cart);
 
   return (
@@ -16,7 +16,7 @@ const ReviewCart = ({ cart, handleRemoveCart }) => {
                 <p className="font-bold">Price: ${pd.price}</p>
                 <div className="enroll-btn">
                   <button onClick={() => handleRemoveCart(pd)} className='bg-gray-400 px-3 py-1 rounded-md mr-2'>Delete</button>
-                  <button className='bg-gray-400 px-3 py-1 rounded-md'>Enroll</button>
+                  <button onClick={() => handleEnrollCourse(pd)} className='bg-gray-400 px-3 py-1 rounded-md'>Enroll</button>
                 </div>
               </div>
             </div>
