@@ -5,9 +5,10 @@ import SingleCourse from '../SingleCourse/SingleCourse';
 import './Course.css';
 
 const Courses = () => {
-  const [cart, setCart] = useState([])
   // custom hooks
   const [courses] = useCart();
+  // state for button handler
+  const [cart, setCart] = useState([])
 
   //handleAddToCart
   const handleAddToCart = (selectedCourse) => {

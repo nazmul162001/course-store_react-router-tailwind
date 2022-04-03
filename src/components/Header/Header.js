@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const {pathname} = useLocation();
+  console.log(pathname);
   return (
     <nav className="bg-sky-500 h-16 flex justify-between items-center px-20">
       <div className="logo">

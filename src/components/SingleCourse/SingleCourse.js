@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './SingleCourse.css';
 
 const SingleCourse = ({ handleAddToCart, course, selectedCourse }) => {
-  const { img, name, description, price } = course;
+  const { img, name, description, price, id} = course;
+  const navigate = useNavigate();
   return (
     <div className="single-course rounded-xl flex justify-between">
       <img className="w-6/12  p-5" src={img} alt="" />
@@ -14,7 +16,7 @@ const SingleCourse = ({ handleAddToCart, course, selectedCourse }) => {
         <p>
           Description:{' '}
           {description.length > 100 ? description.slice(0, 100) : description}{' '}
-          <span className="font-bold cursor-pointer">Read more...</span>
+          <span onClick={() => navigate(`/course/${id}`)}  className="font-bold cursor-pointer">...Read more</span>
         </p>
         <button
           onClick={() => handleAddToCart(course)}
