@@ -4,7 +4,7 @@ const ReviewCart = ({ cart, handleRemoveCart, handleEnrollCourse }) => {
   // console.log(cart);
 
   return (
-    <div>
+    <div className='sticky top-20'>
       <h2 className="text-xl font-mono bg-green-200 m-3 rounded-md"> Selcected Course: {cart.length} </h2>
       <div className="cart-info">
         {cart.map((pd, index) => (
